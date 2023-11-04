@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test1</title>
+</head>
+
+<body>
+    <center>
+        <!--<h1>Given An Array of integers from 1 to n with One missing number,find the missing Number</h1>-->
+        <h1>In array one number is missing</h1>
+
+        <section class="container">
+
+            <div>
+                <!-- <label for="input">Mising Number:</label>
+                <input type="text" id="input"></input>
+
+                <button onclick="isPresent()">Check the Missing Number in Array </button>
+                </br> -->
+                <p id="output"></p>
+            </div>
+
+    </center>
+
+    <script>
+        function isPresent() {
+            let array = [1, 2, 4, 5];
+            
+            for (let i = 0; i <= array.length-1; i++) {
+               if (array[i] !=i) {
+                        document.getElementById("output").innerHTML = i;
+
+                    }
+                    else {
+                        document.getElementById("output").innerHTML = "All number is present in Array";
+                    }
+                }
+            }
+
+        isPresent();
+    </script>
+    <!--<script>
+        let array=[1,2,4,5];
+        console.log(array);
+        let emp =[];
+
+        function isPresent(){
+            for (let i=0; i<array.length; i++);
+              array[i].append(emp);
+              console.log(emp[i]);
+              
+        }
+    </script>-->
+</body>
+
+</html>
